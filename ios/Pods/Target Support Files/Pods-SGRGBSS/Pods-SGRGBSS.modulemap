@@ -1,0 +1,6 @@
+module Pods_SGRGBSS {
+  umbrella header "Pods-SGRGBSS-umbrella.h"
+
+  export *
+  module * { export * }
+}
