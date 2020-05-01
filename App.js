@@ -1,37 +1,49 @@
 import {createAppContainer} from 'react-navigation';
-import {createStackNavigator} from 'react-navigation-stack';
+import {createStackNavigator, HeaderBackground} from 'react-navigation-stack';
 import {createDrawerNavigator} from 'react-navigation-drawer';
 import Dashboard from './src/screens/Dashboard';
 import AboutUs from './src/screens/DrawerScreens/AboutUs';
 import ContactUs from './src/screens/DrawerScreens/ContactUs';
+import MenuButton from './src/components/MenuButton';
+import React from 'react'
 
-//Dashboard 
+//Creating Dashboard Screen in Stack Navigation
 const home = createStackNavigator(
   {
   Dashboard:Dashboard,
-  },
-  {
+  },{
     defaultNavigationOptions :{
-      title : 'Home'
+      title : "Home",
+      headerLeft : () =><MenuButton/>
     }
   }
 );
 
-//Create About Us Screen in Stack Navigation
+//Creating About Us Screen in Stack Navigation
 const AboutUsDrawer = createStackNavigator(
   {
   AboutUs:AboutUs
+  },{
+    defaultNavigationOptions :{
+      title : "About Us",
+      headerLeft : () =><MenuButton/>
+    }
   }
 );
 
-//Create Contact Us Screen in Stack Navigation
+//Creating Contact Us Screen in Stack Navigation
 const ContactUsDrawer = createStackNavigator(
   {
  ContactUs:ContactUs
+  },{
+    defaultNavigationOptions :{
+      title : "Contact Us",
+      headerLeft : () =><MenuButton/>
+    }
   }
 );
 
-// Create Drawer Navigation
+// Creating Drawer Navigation
 
 const drawerNavigation = createDrawerNavigator({
 

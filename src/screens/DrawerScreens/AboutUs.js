@@ -6,7 +6,7 @@ const AboutUs = () =>{
 
     return (
         <View style = {styles.container}>
-            <Text>This is About us screen.</Text>
+            <Text style = {styles.text}>This is About us screen.</Text>
         </View>
     );
 };
@@ -18,12 +18,21 @@ const styles = StyleSheet.create({
         borderColor:'black',
         borderWidth: 5,
         backgroundColor:'green'
+    },
+    text:{
+        fontSize : 18,
+       alignSelf: 'center',
+       color : 'white'
+
     }
+
 });
 AboutUs.navigationOptions = () =>{
 
     return{
-        headerLeft : () =><MenuButton/>
+        headerLeft : () =><MenuButton/>,
+        HeaderTitle : 'About Us'
+        
     }
 };
 export default AboutUs;
