@@ -1,5 +1,5 @@
 import {createAppContainer} from 'react-navigation';
-import {createStackNavigator, HeaderBackground} from 'react-navigation-stack';
+import {createStackNavigator} from 'react-navigation-stack';
 import {createDrawerNavigator} from 'react-navigation-drawer';
 import Dashboard from './src/screens/Dashboard';
 import AboutUs from './src/screens/DrawerScreens/AboutUs';
@@ -14,6 +14,9 @@ const home = createStackNavigator(
   },{
     defaultNavigationOptions :{
       title : "Home",
+      headerStyle: {
+        backgroundColor: '#FFCCCC',
+      },
       headerLeft : () =><MenuButton/>
     }
   }
@@ -26,6 +29,9 @@ const AboutUsDrawer = createStackNavigator(
   },{
     defaultNavigationOptions :{
       title : "About Us",
+      headerStyle: {
+        backgroundColor: '#FFCCCC',
+      },
       headerLeft : () =><MenuButton/>
     }
   }
@@ -38,6 +44,9 @@ const ContactUsDrawer = createStackNavigator(
   },{
     defaultNavigationOptions :{
       title : "Contact Us",
+      headerStyle: {
+        backgroundColor: '#FFCCCC',
+      },
       headerLeft : () =><MenuButton/>
     }
   }

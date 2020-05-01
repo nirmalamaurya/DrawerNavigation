@@ -1,7 +1,5 @@
 import React from 'react';
 import {StyleSheet, View , Text} from 'react-native';
-import MenuButton from '../components/MenuButton';
-import { HeaderTitle } from 'react-navigation-stack';
 
 const Dashboard = () =>{
 
@@ -18,7 +16,7 @@ const styles = StyleSheet.create({
         flex:1,
         borderColor:'black',
         borderWidth: 5,
-        backgroundColor:'green'
+        backgroundColor:'#CCCCFF'
     },
 
     text:{
@@ -28,6 +26,5 @@ const styles = StyleSheet.create({
 
     }
 });
-
 
 export default Dashboard;

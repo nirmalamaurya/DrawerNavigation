@@ -1,6 +1,5 @@
 import React from 'react';
 import {StyleSheet, View , Text} from 'react-native';
-import MenuButton from '../../components/MenuButton';
 
 const AboutUs = () =>{
 
@@ -17,22 +16,15 @@ const styles = StyleSheet.create({
         flex:1,
         borderColor:'black',
         borderWidth: 5,
-        backgroundColor:'green'
+        backgroundColor:'#ccffcc'
     },
     text:{
         fontSize : 18,
        alignSelf: 'center',
-       color : 'white'
+       color : 'black'
 
     }
 
 });
-AboutUs.navigationOptions = () =>{
 
-    return{
-        headerLeft : () =><MenuButton/>,
-        HeaderTitle : 'About Us'
-        
-    }
-};
 export default AboutUs;

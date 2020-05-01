@@ -1,7 +1,5 @@
 import React from 'react';
 import {StyleSheet, View , Text} from 'react-native';
-import MenuButton from '../../components/MenuButton';
-import { color } from 'react-native-reanimated';
 
 const ContactUs = () =>{
 
@@ -18,19 +16,13 @@ const styles = StyleSheet.create({
         flex:1,
         borderColor:'black',
         borderWidth: 5,
-        backgroundColor:'red'
+        backgroundColor:'#FFFFCC'
     },
     text:{
         fontSize : 18,
         alignSelf: 'center',
-        color : 'white'
+        color : 'black'
     }
 });
-ContactUs.navigationOptions = () =>{
 
-    return{
-        headerLeft : () =><MenuButton/>,
-        HeaderTitle : 'Contact Us'
-    }
-};
 export default ContactUs;
